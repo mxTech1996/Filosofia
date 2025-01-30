@@ -11,9 +11,9 @@ module.exports = {
         hero: "calc(100vh - 104px)",
       },
       colors: {
-        primary: "#f7dc6f", // Azul crema
-        secondary: "#f7dc6f", // azul cielo
-        third: "#e74c3c", // Azul claro
+        primary: "#4169E1", // Azul crema
+        secondary: "#41a6e1", // azul cielo
+        third: "#3c75e7", // Azul claro
         black: "#001", // Gris oscuro
       },
 

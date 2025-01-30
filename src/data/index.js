@@ -1,6 +1,6 @@
-export const pageName = 'Filosofia';
-export const primaryColor = '#000000';
-export const backgroundColor = '#FFFFFF';
+export const pageName = "Filosofia";
+export const primaryColor = "#000000";
+export const backgroundColor = "#FFFFFF";
 export const makeClearBackground = (color) => {
   return {
     backgroundColor: color,
@@ -9,34 +9,34 @@ export const makeClearBackground = (color) => {
 
 export const navData = [
   {
-    href: '/#courses',
-    label: 'Our Course',
+    href: "/",
+    label: "Home",
   },
   {
-    href: '/#our-services',
-    label: 'Our Services',
+    href: "/#courses",
+    label: "Courses",
   },
   {
-    href: '/#references',
-    label: 'References',
+    href: "/#our-services",
+    label: "Services",
   },
   {
-    href: '/#know-us',
-    label: 'Know Us',
+    href: "/#references",
+    label: "References",
   },
   {
-    href: '/more-information',
-    label: 'Contact Us',
+    href: "/more-information",
+    label: "Contact Us",
   },
 ];
 
 export const footerData = [
   {
-    href: '/pdf/AP.pdf',
-    label: 'Privacy',
+    href: "/pdf/AP.pdf",
+    label: "Privacy",
   },
   {
-    href: '/pdf/TYC.pdf',
-    label: 'Terms',
+    href: "/pdf/TYC.pdf",
+    label: "Terms",
   },
 ];

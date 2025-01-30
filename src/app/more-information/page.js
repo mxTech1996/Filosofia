@@ -8,7 +8,11 @@ export default function MoreInformation() {
   return (
     <main className="relative">
       <Navbar />
-      <ContactInfo />
+
+      <div className="bg-blue-200">
+        <ContactInfo />
+      </div>
+
       <Footer />
     </main>
   );

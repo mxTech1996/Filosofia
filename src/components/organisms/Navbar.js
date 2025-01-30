@@ -1,51 +1,46 @@
-'use client';
-import { useRouter } from 'next/navigation';
-import { navData } from '@/data';
-import { Navbar as NavbarV2, theme } from 'ecommerce-mxtech';
-import { useInformation } from '@/store/useInformation';
+"use client";
 
-const { useToken } = theme;
+import { navData } from "@/data";
+import { useInformation } from "@/store/useInformation";
+import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const { dataSite } = useInformation();
-  const router = useRouter();
-  const {
-    token: { colorPrimary },
-  } = useToken();
 
   return (
-    <NavbarV2
-      linksProps={{
-        variant: 'underline',
-        align: 'left',
-      }}
-      textColor='black'
-      withLogo={true}
-      imageProps={{
-        src: dataSite.iconImage,
-        className: 'w-28',
-      }}
-      styleTitle={{
-        fontWeight: 'bold',
-        fontSize: 16,
-        color: 'black',
-      }}
-      links={navData}
-      onClickProduct={(product) => {
-        router.push(`/product/${product.id}`);
-      }}
-      buttonCartProps={{
-        onClick: () => router.push('/my-cart'),
-      }}
-      buttonContactProps={{
-        onClick: () => router.push('/more-information'),
-      }}
-      onRedirect={(path) => router.push(path)}
-      styleHeader={{
-        height: 100,
-        color: 'black',
-      }}
-    />
+    <header className="container mx-auto px-4 py-6 flex items-center justify-between">
+      <div className="text-2xl font-bold text-primary">
+        {dataSite?.iconImage && (
+          <Link href="/">
+            <Image
+              src={dataSite.iconImage}
+              alt={dataSite.name}
+              width={100}
+              height={20}
+            />
+          </Link>
+        )}
+      </div>
+
+      <nav className="flex items-center gap-8">
+        {navData.map((item, i) => (
+          <Link
+            href={item?.href}
+            className="text-gray-600 hover:text-gray-900"
+            key={i}
+          >
+            {item?.label}
+          </Link>
+        ))}
+
+        <Link href="/my-cart">
+          <button className="bg-primary text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors">
+            Go to Cart
+          </button>
+        </Link>
+      </nav>
+    </header>
   );
 };
 
