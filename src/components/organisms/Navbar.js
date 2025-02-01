@@ -1,13 +1,10 @@
 "use client";
 
-import { navData } from "@/data";
-import { useInformation } from "@/store/useInformation";
+import { navData, dataSite } from "@/data";
 import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
-  const { dataSite } = useInformation();
-
   return (
     <header className="container mx-auto px-4 py-6 flex items-center justify-between">
       <div className="text-2xl font-bold text-primary">

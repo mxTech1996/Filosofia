@@ -1,12 +1,10 @@
 "use client";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { footerData } from "@/data";
+import { footerData, dataSite } from "@/data";
 import { Footer as FooterComponent } from "ecommerce-mxtech";
-import { useInformation } from "@/store/useInformation";
 
 const Footer = () => {
-  const { dataSite } = useInformation();
   const router = useRouter();
 
   return (

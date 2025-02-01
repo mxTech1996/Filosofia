@@ -2,16 +2,14 @@
 
 import Footer from "@/components/organisms/Footer";
 import Navbar from "@/components/organisms/Navbar";
+import { dataSite } from "@/data";
 import products from "@/data/products";
-import { useInformation } from "@/store/useInformation";
 import { formatNumber, useCart } from "ecommerce-mxtech";
 import Image from "next/image";
 import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 
 export default function Home() {
-  const { dataSite } = useInformation();
-
   const { handleAddOrRemoveProduct, validateProductInCart } = useCart();
 
   console.log(products);
