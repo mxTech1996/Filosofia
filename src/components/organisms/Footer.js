@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { footerData, dataSite } from "@/data";
 import { Footer as FooterComponent } from "ecommerce-mxtech";
+import Image from "next/image";
 
 const Footer = () => {
   const router = useRouter();
@@ -11,9 +12,9 @@ const Footer = () => {
     <footer className="bg-white mt-10">
       <div className="container mx-auto grid grid-cols-4 gap-10">
         <div className="w-full">
-          <div className="flex flex-col">
-            <h3 className="text-lg font-bold mb-2">{dataSite.name}</h3>
-            <div className="flex space-x-8">
+          <div className="flex flex-col gap-2">
+            <h3 className="text-lg font-bold">{dataSite.name}</h3>
+            <div className="flex space-x-8 mb-2">
               {footerData.map((item, i) => (
                 <Link
                   href={item.href}
@@ -24,6 +25,13 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
+
+            <Image
+              src="/images/visaMaster.png"
+              alt="visa card"
+              width={120}
+              height={120}
+            />
           </div>
         </div>
 
