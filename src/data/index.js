@@ -45,7 +45,7 @@ export const dataSite = {
   name: "Filosofia",
   url: "http://w.w.w.terra.com",
   telephone: "5561653705",
-  email: "info@ejemplo.com",
+  email: "admfilosofiaentalento@emailsecure.lat",
   address:
     "AV RICARDO MARGAIN ZOZAYA 575, S 100 ED C NA 0, SANTA ENGRACIA, SAN PEDRO GARZA GARCIA, NUEVO LEON, CP 66267",
   description:
