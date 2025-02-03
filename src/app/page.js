@@ -13,52 +13,52 @@ const testimonialImages = [
   {
     src: dataSite.image_hero2,
     alt: "Professional portrait",
-    className: "absolute left-20 top-10",
+    className: "absolute -z-10 left-20 top-10",
   },
   {
     src: dataSite.image_hero2,
     alt: "Professional portrait",
-    className: "absolute left-48 top-0",
+    className: "absolute -z-10 left-48 top-0",
   },
   {
     src: dataSite.image_hero2,
     alt: "Professional portrait",
-    className: "absolute left-96 top-16",
+    className: "absolute -z-10 left-96 top-16",
   },
   {
     src: dataSite.image_hero2,
     alt: "Professional portrait",
-    className: "absolute right-96 top-0",
+    className: "absolute -z-10 right-96 top-0",
   },
   {
     src: dataSite.image_hero2,
     alt: "Professional portrait",
-    className: "absolute right-48 top-20",
+    className: "absolute -z-10 right-48 top-20",
   },
   {
     src: dataSite.image_hero2,
     alt: "Professional portrait",
-    className: "absolute right-20 top-8",
+    className: "absolute -z-10 right-20 top-8",
   },
   {
     src: dataSite.image_hero2,
     alt: "Professional portrait",
-    className: "absolute left-32 bottom-0",
+    className: "absolute -z-10 left-32 bottom-0",
   },
   {
     src: dataSite.image_hero2,
     alt: "Professional portrait",
-    className: "absolute left-72 bottom-20",
+    className: "absolute -z-10 left-72 bottom-20",
   },
   {
     src: dataSite.image_hero2,
     alt: "Professional portrait",
-    className: "absolute right-72 bottom-16",
+    className: "absolute -z-10 right-72 bottom-16",
   },
   {
     src: dataSite.image_hero2,
     alt: "Professional portrait",
-    className: "absolute right-32 bottom-4",
+    className: "absolute -z-10 right-32 bottom-4",
   },
 ];
 
