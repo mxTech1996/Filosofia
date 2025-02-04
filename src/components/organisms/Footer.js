@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-white mt-10">
-      <div className="container mx-auto grid grid-cols-4 gap-10">
+      <div className="mx-auto grid grid-cols-4 gap-10">
         <div className="w-full">
           <div className="flex flex-col gap-2">
             <h3 className="text-lg font-bold">{dataSite.name}</h3>
