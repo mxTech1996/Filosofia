@@ -1,5 +1,4 @@
 "use client";
-
 import Provider from "@/store/provider";
 import { fontNunito, fontUrbanist } from "../fonts";
 import "../styles/globals.css";

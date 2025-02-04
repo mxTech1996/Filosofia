@@ -7,6 +7,7 @@ import products from "@/data/products";
 import { formatNumber, useCart } from "ecommerce-mxtech";
 import Image from "next/image";
 import Link from "next/link";
+import { useCallback, useEffect, useState } from "react";
 import { FaArrowRight, FaStar } from "react-icons/fa";
 
 const testimonialImages = [
@@ -65,7 +66,9 @@ const testimonialImages = [
 export default function Home() {
   const { handleAddOrRemoveProduct, validateProductInCart } = useCart();
 
-  console.log(products);
+  const changeAddRemoveProduct = (id) => {
+    handleAddOrRemoveProduct(id);
+  };
 
   return (
     <main>
@@ -226,7 +229,8 @@ export default function Home() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {dataSite.products.map((course, index) => {
-            const existProduct = validateProductInCart(course.id);
+            const existProduct = validateProductInCart(+course?.id);
+            console.log({ course, existProduct });
 
             return (
               <div
@@ -269,7 +273,7 @@ export default function Home() {
                     </p>
                     <button
                       className="w-full text-white px-4 py-2 rounded-full hover:bg-primary-700 transition-colors"
-                      onClick={() => handleAddOrRemoveProduct(course.id)}
+                      onClick={() => changeAddRemoveProduct(course.id)}
                       style={{
                         backgroundColor: !existProduct ? "#007bff" : "#7bbafd",
                       }}
