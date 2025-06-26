@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^1.6.8",
     "ecommerce-mxtech": "^0.0.77",
+    "framer-motion": "^12.19.1",
     "fs": "^0.0.1-security",
     "inquirer": "^9.2.23",
     "lodash": "^4.17.21",
